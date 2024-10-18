@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.2
+Created-By: 1.7.0_55-b13 (Oracle Corporation)
+Main-Class: FAACbeans.BackgroundWorkDialog
+Class-Path: RXTXcomm.jar commons-logging-1.1.1.jar iText-2.1.7.jar jas
+ perreports-4.0.2.jar swing-layout-1.0.4.jar appframework-1.0.3.jar sw
+ ing-worker-1.1.jar swingx-1.6.jar
+
