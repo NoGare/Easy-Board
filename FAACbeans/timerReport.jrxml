@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Timer E145" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="758" leftMargin="42" rightMargin="42" topMargin="42" bottomMargin="42" resourceBundle="timerReport" whenResourceMissingType="Error">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="58"/>
+	<property name="ireport.y" value="60"/>
+	<style name="Title" forecolor="#FF9933" backcolor="#FFCC99" fontName="Tahoma" fontSize="20" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<style name="Normal" isDefault="true" mode="Opaque" isBlankWhenNull="true" fontName="Tahoma" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Times-Roman"/>
+	<style name="subTitle" forecolor="#FF9933" fontName="Tahoma" fontSize="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<parameter name="LOGO" class="java.lang.String"/>
+	<parameter name="TIMER_IMAGE" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement style="Title" x="0" y="0" width="525" height="40" forecolor="#FF9933" backcolor="#FFCC99"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{report.title}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RealSize" hAlign="Right" isLazy="true" onErrorType="Blank">
+				<reportElement x="593" y="0" width="163" height="55"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{LOGO}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="426" splitType="Stretch">
+			<staticText>
+				<reportElement style="Normal" x="591" y="6" width="130" height="20"/>
+				<textElement/>
+				<text><![CDATA[________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Normal" positionType="Float" x="590" y="96" width="131" height="20"/>
+				<textElement/>
+				<text><![CDATA[________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Normal" x="523" y="76" width="67" height="20"/>
+				<textElement textAlignment="Right">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{phoneLabel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Normal" x="591" y="77" width="130" height="20"/>
+				<textElement/>
+				<text><![CDATA[________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="523" y="96" width="67" height="20"/>
+				<textElement textAlignment="Right">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{emailLabel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Normal" x="591" y="51" width="131" height="20"/>
+				<textElement/>
+				<text><![CDATA[________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Normal" x="525" y="26" width="65" height="20"/>
+				<textElement textAlignment="Right">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{addressLabel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Normal" x="590" y="26" width="131" height="20"/>
+				<textElement/>
+				<text><![CDATA[________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Normal" x="529" y="6" width="61" height="20"/>
+				<textElement textAlignment="Right">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{customerLabel}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" hAlign="Right" isLazy="true" onErrorType="Blank">
+				<reportElement x="4" y="0" width="435" height="381"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{TIMER_IMAGE}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="548" y="350" width="203" height="69"/>
+			</rectangle>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="562" y="354" width="178" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{signatureLabel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="561" y="328" width="41" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{dateLabel}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement style="Normal" x="608" y="328" width="100" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="548" y="144" width="34" height="20" backcolor="#00FF00"/>
+			</rectangle>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="587" y="147" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{openA}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="548" y="164" width="34" height="20" backcolor="#FFC800"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="184" width="34" height="20" backcolor="#FFAFAF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="204" width="34" height="20" backcolor="#FF00FF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="223" width="34" height="20" backcolor="#0000FF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="243" width="34" height="20" backcolor="#808080"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="263" width="34" height="20" backcolor="#C0C0C0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="283" width="34" height="20" backcolor="#FFFF00"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="548" y="303" width="34" height="20" backcolor="#00FFFF"/>
+			</rectangle>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="167" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{openB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="587" y="188" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{esclIn1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="208" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{esclIn1In2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="228" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{esclRadio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="248" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{esclRadioDec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="266" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{esclRadioXf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="286" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{out1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="588" y="306" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{out2}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="548" y="124" width="34" height="20" backcolor="#FF0000"/>
+			</rectangle>
+			<textField>
+				<reportElement style="Normal" positionType="Float" x="587" y="127" width="99" height="20"/>
+				<textElement textAlignment="Left">
+					<paragraph spacingAfter="3"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$R{closed}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
